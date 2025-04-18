@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+    <!-- 標題 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:paddingBottom="16dp"
+        android:text="修改、刪除紀念日"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <!-- 日期選擇器按鈕 -->
+    <Button
+        android:id="@+id/dateButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="選擇日期" />
+
+    <!-- 紀念日名稱輸入 -->
+    <EditText
+        android:id="@+id/eventNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="紀念日名稱" />
+
+    <!-- 背景顏色選擇 -->
+    <EditText
+        android:id="@+id/colorEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="背景顏色 (例如 #FF5733)" />
+
+    <!-- 事件描述 -->
+    <EditText
+        android:id="@+id/descriptionEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="事件描述" />
+
+    <!-- 是否重複 (年) -->
+
+    <!-- 儲存和取消按鈕 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end">
+
+        <Button
+            android:id="@+id/updateButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="修改" />
+
+
+        <Button
+            android:id="@+id/delButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="刪除" />
+
+        <Button
+            android:id="@+id/cancelButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="取消" />
+    </LinearLayout>
+</LinearLayout>
